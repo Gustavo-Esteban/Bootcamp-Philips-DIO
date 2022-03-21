@@ -1,0 +1,42 @@
+.mario {
+    width: 60px;
+    height: 60px;
+    background-image: url(./assets/img/super-mario-mario-20.png);
+    position: absolute;
+    bottom: 0;
+}
+
+.cano{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url(./assets/img/cano.png);
+    bottom: 0;
+}
+
+.game-over{
+    text-align: center;
+    color: #666666;
+    margin-top: 50px;
+    font-family: arial;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    background-image: url(./assets/img/background.jpg);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 100vh;
+    
+}
